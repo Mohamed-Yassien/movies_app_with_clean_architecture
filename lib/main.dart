@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movies_clean_arc/movies/domain/entities/movie.dart';
 
 void main() {
   runApp(const MyApp());
