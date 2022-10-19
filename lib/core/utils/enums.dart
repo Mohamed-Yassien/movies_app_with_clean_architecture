@@ -1,4 +1,4 @@
-enum MovieStateEnum {
+enum RequestState {
   loading,
   loaded,
   error,

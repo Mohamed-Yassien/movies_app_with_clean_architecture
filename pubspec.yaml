@@ -38,6 +38,12 @@ dependencies:
   dio:
   dartz:
   flutter_bloc:
+  get_it:
+  shimmer:
+  google_fonts:
+  animate_do: ^2.1.0
+  cached_network_image:
+  carousel_slider:
 
 dev_dependencies:
   flutter_test:

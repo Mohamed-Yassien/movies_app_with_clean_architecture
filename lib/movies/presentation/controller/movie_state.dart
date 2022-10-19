@@ -5,12 +5,12 @@ import '../../domain/entities/movie.dart';
 
 class MovieState extends Equatable {
   final List<Movie> nowPlayingMovies;
-  final MovieStateEnum nowPlayingMovieState;
+  final RequestState nowPlayingMovieState;
   final String nowPlayingErrorMessage;
 
   const MovieState({
     this.nowPlayingMovies = const [],
-    this.nowPlayingMovieState = MovieStateEnum.loading,
+    this.nowPlayingMovieState = RequestState.loading,
     this.nowPlayingErrorMessage = '',
   });
 
