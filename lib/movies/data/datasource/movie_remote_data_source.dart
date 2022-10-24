@@ -25,7 +25,7 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
     } else {
       throw ServerExceptions(
         errorMessageModel: ErrorMessageModel.fromJson(
-          response.data['statusMessage'],
+          response.data['status_message'],
         ),
       );
     }
@@ -43,7 +43,7 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
     } else {
       throw ServerExceptions(
         errorMessageModel: ErrorMessageModel.fromJson(
-          response.data['statusMessage'],
+          response.data['status_message'],
         ),
       );
     }
@@ -61,7 +61,7 @@ class MovieRemoteDataSource extends BaseMovieRemoteDataSource {
     } else {
       throw ServerExceptions(
         errorMessageModel: ErrorMessageModel.fromJson(
-          response.data['statusMessage'],
+          response.data['status_message'],
         ),
       );
     }
