@@ -9,7 +9,7 @@ class ApiConstance {
   static const getNowPlayingPath =
       '$baseUrl/movie/now_playing?api_key=$apiKey';
   static const getPopularPath = '$baseUrl/$popularEndPoint?api_key=$apiKey';
-  static const getTopRatedPath = '$baseUrl$topRatedEndPoint?api_key=$apiKey';
+  static const getTopRatedPath = '$baseUrl/$topRatedEndPoint?api_key=$apiKey';
 
   static const String baseImageUrl = 'https://image.tmdb.org/t/p/w500';
 

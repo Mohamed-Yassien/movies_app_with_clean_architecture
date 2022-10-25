@@ -10,6 +10,9 @@ class MovieState extends Equatable {
   final List<Movie> popularMovies;
   final RequestState popularMovieState;
   final String popularErrorMessage;
+  final List<Movie> topRatedMovies;
+  final RequestState topRatedMovieState;
+  final String topRatedErrorMessage;
 
   const MovieState({
     this.nowPlayingMovies = const [],
@@ -18,6 +21,9 @@ class MovieState extends Equatable {
     this.popularMovies = const [],
     this.popularErrorMessage = '',
     this.popularMovieState = RequestState.loading,
+    this.topRatedMovies = const [],
+    this.topRatedErrorMessage = '',
+    this.topRatedMovieState = RequestState.loading,
   });
 
   MovieState copyWith({
@@ -27,6 +33,9 @@ class MovieState extends Equatable {
     List<Movie>? popularMovies,
     RequestState? popularMovieState,
     String? popularErrorMessage,
+    List<Movie>? topRatedMovies,
+    RequestState? topRatedMovieState,
+    String? topRatedErrorMessage,
   }) {
     return MovieState(
       nowPlayingMovies: nowPlayingMovies ?? this.nowPlayingMovies,
@@ -36,6 +45,9 @@ class MovieState extends Equatable {
       popularMovies: popularMovies ?? this.popularMovies,
       popularMovieState: popularMovieState ?? this.popularMovieState,
       popularErrorMessage: popularErrorMessage ?? this.popularErrorMessage,
+      topRatedMovies: topRatedMovies ?? this.topRatedMovies,
+      topRatedMovieState: topRatedMovieState ?? this.topRatedMovieState,
+      topRatedErrorMessage: topRatedErrorMessage ?? this.topRatedErrorMessage,
     );
   }
 
@@ -47,5 +59,8 @@ class MovieState extends Equatable {
         popularMovies,
         popularMovieState,
         popularErrorMessage,
+        topRatedMovies,
+        topRatedMovieState,
+        topRatedErrorMessage,
       ];
 }
