@@ -6,16 +6,20 @@ class ApiConstance {
   static const popularEndPoint = 'movie/popular';
   static const topRatedEndPoint = 'movie/top_rated';
 
-  static const getNowPlayingPath =
-      '$baseUrl/movie/now_playing?api_key=$apiKey';
+  static const getNowPlayingPath = '$baseUrl/movie/now_playing?api_key=$apiKey';
+
+  static getMovieRecommendationPath({required int movieId}) =>
+      '$baseUrl/movie/$movieId/recommendations?api_key=$apiKey';
+
+  static getMovieDetails({required int movieId}) =>
+      '$baseUrl/movie/$movieId?api_key=$apiKey';
   static const getPopularPath = '$baseUrl/$popularEndPoint?api_key=$apiKey';
   static const getTopRatedPath = '$baseUrl/$topRatedEndPoint?api_key=$apiKey';
 
   static const String baseImageUrl = 'https://image.tmdb.org/t/p/w500';
 
-  static String imageUrl (String path) => '$baseImageUrl$path';
+  static String imageUrl(String path) => '$baseImageUrl$path';
 }
-
 
 // https://api.themoviedb.org/3/movie/now_playing?api_key=bdeda500907a0738ee12b53e1ac788aa
 // https://api.themoviedb.org/3/movie/now_playing?api_key=bdeda500907a0738ee12b53e1ac788aaa
